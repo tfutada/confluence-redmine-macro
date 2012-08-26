@@ -6,6 +6,7 @@ AJS.$(function($) {
                 var redmine = AJS.$(".redmine").val();
                 var priority = AJS.$(".priority").val();
                 var createdDate = AJS.$(".createdDate").val();
+                var queryId = AJS.$(".queryId").val();
 
                 var json = eval("(" + redmine + ")");
 

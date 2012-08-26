@@ -49,14 +49,21 @@ public class ExampleMacro implements Macro {
 	public String execute(Map<String, String> parameters, String body,
 			ConversionContext context) throws MacroExecutionException {
 
-		String restapi = (String) parameters.get("hostname");
+		String restapi = (String) parameters.get("Hostname");
 		if (restapi == null || "".equals(restapi)) {
 			restapi = "http://my.redmine.jp";
 		}
+
 		String priority = (String) parameters.get("Priority");
 		String createdDate = (String) parameters.get("CreatedDate");
+		String queryId = (String) parameters.get("QueryId");
 
 		String url = restapi + "/demo/projects/demo/issues.json";
+		if (queryId != null && queryId.length() > 0) {
+			url = url + "?query_id=" + queryId;
+		}
+		System.out.println("url:" + url);
+
 		BufferedReader br = null;
 		StringBuilder sb = new StringBuilder();
 		String line = null;
