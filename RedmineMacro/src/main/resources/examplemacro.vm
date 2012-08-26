@@ -1,0 +1,10 @@
+<!--
+#requireResource("jp.co.go2group.macro3:resources")
+-->
+
+<span class="dataTable">
+    <fieldset class="parameters hidden">
+        <input type="hidden" class="redmine" value="$redmine">
+        <input type="hidden" class="restapi" value="$restapi">
+    </fieldset>
+</span>
