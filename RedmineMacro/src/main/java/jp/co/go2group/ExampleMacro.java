@@ -48,10 +48,13 @@ public class ExampleMacro implements Macro {
 	@Override
 	public String execute(Map<String, String> parameters, String body,
 			ConversionContext context) throws MacroExecutionException {
+
 		String restapi = (String) parameters.get("hostname");
 		if (restapi == null || "".equals(restapi)) {
 			restapi = "http://my.redmine.jp";
 		}
+		String priority = (String) parameters.get("Priority");
+		String createdDate = (String) parameters.get("CreatedDate");
 
 		String url = restapi + "/demo/projects/demo/issues.json";
 		BufferedReader br = null;
@@ -83,6 +86,8 @@ public class ExampleMacro implements Macro {
 		if (RenderContext.DISPLAY.equals(context.getOutputType())) {
 			contextMap.put("redmine", sb.toString());
 			contextMap.put("restapi", restapi);
+			contextMap.put("priority", priority);
+			contextMap.put("createdDate", createdDate);
 		}
 
 		return VelocityUtils.getRenderedTemplate("examplemacro.vm", contextMap);

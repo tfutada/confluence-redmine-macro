@@ -4,6 +4,8 @@ AJS.$(function($) {
             function() {
                 var restapi = AJS.$(".restapi").val();
                 var redmine = AJS.$(".redmine").val();
+                var priority = AJS.$(".priority").val();
+                var createdDate = AJS.$(".createdDate").val();
 
                 var json = eval("(" + redmine + ")");
 
@@ -14,8 +16,17 @@ AJS.$(function($) {
                         + "<th>Subject</th>"
                         + "<th>Reporter</th>"
                         + "<th>Status</th>"
-                        + "<th>Tracker</th>"
-                        + "<th>Priority</th>" + "<th>Created Date</th>" + "</tr></thead><tbody>";
+                        + "<th>Tracker</th>";
+
+                if (priority == "true") {
+                    html = html + "<th>Priority</th>";
+                }
+
+                if (createdDate == "true") {
+                    html = html + "<th>Created Date</th>";
+                }
+
+                html = html + "</tr></thead><tbody>";
 
                 AJS.$.each(json.issues, function() {
                    html = html
@@ -25,10 +36,18 @@ AJS.$(function($) {
                             + "<td>" + this.subject + "</td>"
                             + "<td>" + this.author.name + "</td>"
                             + "<td>" + this.status.name + "</td>"
-                            + "<td>" + this.tracker.name + "</td>"
-                            + "<td>" + this.priority.name + "</td>"
-                            + "<td>" + this.created_on + "</td>"
-                            + "</tr>";
+                            + "<td>" + this.tracker.name + "</td>";
+
+                   if (priority == "true") {
+                       html = html + "<td>" + this.priority.name + "</td>";
+                   }
+
+                   if (createdDate == "true") {
+                       html = html + "<td>" + this.created_on + "</td>";
+                   }
+
+                   html = html + "</tr>";
+
                 });
 
                 html = html + "</tbody></table>";

@@ -43,11 +43,13 @@
 		</resource>
 	</web-resource>
 
-    <xhtml-macro name="macro3" class="jp.co.go2group.ExampleMacro" key="my-macro">
-        <description>REST API.</description>
+    <xhtml-macro name="redmine" class="jp.co.go2group.ExampleMacro" key="my-macro">
+        <description>Confluence macro that allows you to integrate with Redmine via REST API.</description>
         <category name="confluence-content"/>
 	    <parameters>
 	        <parameter name="hostname" type="string" default="http://my.redmine.jp"></parameter>
+	        <parameter name="Priority" type="boolean"></parameter>
+	        <parameter name="CreatedDate" type="boolean"></parameter>
 	    </parameters>
     </xhtml-macro>
 

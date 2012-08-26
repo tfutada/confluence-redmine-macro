@@ -6,5 +6,7 @@
     <fieldset class="parameters hidden">
         <input type="hidden" class="redmine" value="$redmine">
         <input type="hidden" class="restapi" value="$restapi">
+        <input type="hidden" class="priority" value="$priority">
+        <input type="hidden" class="createdDate" value="$createdDate">
     </fieldset>
 </span>
