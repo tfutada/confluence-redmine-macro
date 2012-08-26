@@ -97,5 +97,4 @@ public class ExampleMacro implements Macro {
 	public OutputType getOutputType() {
 		return OutputType.BLOCK;
 	}
-
 }
