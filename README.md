@@ -3,7 +3,7 @@ ___
 
 Confluence macro that allows you to integrate with Redmine via [REST API].
 The macro retrieves a list of issues that resides in a redmine server using REST JSON.
-jQuery data table gadget render the list of JSON in a pagination table nicely.
+A jQuery data table gadget renders the list of JSON in a pagination table nicely.
 
 # How to use
 ---
