@@ -27,4 +27,4 @@ Version 4.x are supported.
 
 
 
-[ REST API]:http://www.redmine.org/projects/redmine/wiki/Rest_api
+[REST API]:http://www.redmine.org/projects/redmine/wiki/Rest_api
