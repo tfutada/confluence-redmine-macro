@@ -1,7 +1,7 @@
 # confluence-redmine-macro
 ___
 
-Confluence macro that allows you to integrate with Redmine via REST API.
+Confluence macro that allows you to integrate with Redmine via [REST API].
 The macro retrieves a list of issues that resides in a redmine server using REST JSON.
 jQuery data table gadget render the list of JSON in a pagination table nicely.
 
@@ -27,4 +27,4 @@ Version 4.x are supported.
 
 
 
-[Readmine REST API]:http://www.redmine.org/projects/redmine/wiki/Rest_api
+[ REST API]:http://www.redmine.org/projects/redmine/wiki/Rest_api
