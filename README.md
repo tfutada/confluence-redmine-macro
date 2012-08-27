@@ -9,9 +9,7 @@ A jQuery *data table gadget* renders the list of JSON in a pagination table nice
 
 Just put the macro below in your confluence page.
 
-`
-{redmine}
-`
+> {redmine}
 
 ## Configuration
 
@@ -23,9 +21,8 @@ what fields are visible, and how may line to be retrieved.
 
 
 This is a standard Confluence macro so you can build it like
-`
+
 > atlas-mvn package
-`
 
 And then, you can upload the generated jar into Confluence via the admin page.
 
