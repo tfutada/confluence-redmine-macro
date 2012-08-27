@@ -24,7 +24,7 @@ what fields are visible, and how may line to be retrieved.
 
 This is a standard Confluence macro so you can build it like
 `
-# atlas-mvn package
+## atlas-mvn package
 `
 And then, you can upload the generated jar into Confluence via the admin page.
 
