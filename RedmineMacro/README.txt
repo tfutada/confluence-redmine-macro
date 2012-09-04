@@ -17,3 +17,5 @@ https://developer.atlassian.com/display/DOCS/Developing+with+the+Atlassian+Plugi
 * atlas-mvn package
 
 file I/O
+
+Mojibake
