@@ -14,4 +14,6 @@ Full documentation is always available at:
 
 https://developer.atlassian.com/display/DOCS/Developing+with+the+Atlassian+Plugin+SDK
 
+OMG5
+
 * atlas-mvn package
