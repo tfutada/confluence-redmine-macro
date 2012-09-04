@@ -15,3 +15,5 @@ Full documentation is always available at:
 https://developer.atlassian.com/display/DOCS/Developing+with+the+Atlassian+Plugin+SDK
 
 * atlas-mvn package
+
+file I/O
